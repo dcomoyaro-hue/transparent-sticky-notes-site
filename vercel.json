@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/wireframe-sticky-lp.html"
+      "destination": "/wireframe-sticky-lp"
     }
   ]
 }
