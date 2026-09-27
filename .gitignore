@@ -1,0 +1,6 @@
+sources/
+AGENTS.md
+.vercel/
+.tools/
+*.log
+

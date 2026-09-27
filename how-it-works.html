@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="透明付箋で背面のアプリを操作し、再び付箋を編集するまでの流れ。">
+  <title>透明付箋の使い方 | Transparent Sticky Notes</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='3' width='24' height='26' rx='3' fill='%23ffe271' stroke='%231d2733' stroke-width='2'/%3E%3Cpath d='M20 29l8-8v8z' fill='%23e7bd36'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="sticky-lp.css">
+  <script src="sticky-lp.js" defer></script>
+</head>
+<body class="guide-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="brand" href="wireframe-sticky-lp.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-name">Transparent Sticky Notes</span></a>
+    <nav class="site-nav" aria-label="ガイドナビゲーション">
+      <a href="#transparent">透明にする</a>
+      <a href="#behind">背面を操作</a>
+      <a href="#edit">編集に戻る</a>
+      <a class="nav-guide" href="wireframe-sticky-lp.html">紹介ページへ戻る</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="guide-hero">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h1>付箋を残したまま、<br>向こう側の作業へ。</h1>
+        <p>透明付箋を使って背面のアプリを操作し、必要になったら付箋の編集へ戻るまでを、順番に確認できます。</p>
+      </div>
+      <a class="button button-secondary" href="wireframe-sticky-lp.html">紹介ページへ戻る</a>
+    </section>
+
+    <section class="animation-section" aria-labelledby="animation-title">
+      <div class="animation-heading">
+        <div><p class="eyebrow">Interactive preview</p><h2 id="animation-title">透明化から作業開始まで</h2></div>
+        <button class="icon-text-button" type="button" data-replay>もう一度見る</button>
+      </div>
+      <div class="animation-stage" data-animation-stage>
+        <div class="animation-window">
+          <div class="window-bar"><span></span><strong>企画書.docx</strong><i>− □ ×</i></div>
+          <div class="animation-document">
+            <div class="toolbar-row"><i></i><i></i><i></i><i></i></div>
+            <span class="doc-title"></span><span></span><span></span><span class="short"></span>
+            <button class="document-action" type="button">資料を編集</button>
+          </div>
+        </div>
+        <article class="animation-note">
+          <div class="note-toolbar"><span>今日</span><span>•••</span></div>
+          <strong>企画書<br>10分だけ進める</strong>
+          <p>提出前の確認まで</p>
+          <span class="mode-indicator"><i></i><b aria-hidden="true"></b><span class="sr-only">操作モードが切り替わります</span></span>
+        </article>
+        <div class="animation-cursor" aria-hidden="true"></div>
+        <div class="animation-click" aria-hidden="true"></div>
+        <div class="animation-caption" aria-live="polite" data-animation-caption><span>1</span><strong>付箋を確認</strong><small>短い言葉で、次にやることを思い出します。</small></div>
+      </div>
+      <ol class="animation-legend">
+        <li class="is-current" data-animation-step="1"><span>1</span><strong>思い出す</strong><small>付箋を確認</small></li>
+        <li data-animation-step="2"><span>2</span><strong>透明にする</strong><small>背面操作へ切り替え</small></li>
+        <li data-animation-step="3"><span>3</span><strong>始める</strong><small>背面の画面を操作</small></li>
+      </ol>
+    </section>
+
+    <section class="guide-steps">
+      <article id="transparent">
+        <span class="guide-number">01</span>
+        <div><p class="eyebrow">Make transparent</p><h2>付箋を透明にする。</h2><p>内容を確認したら、透明表示へ切り替えます。やることは視界に残り、背面の資料も見える状態になります。</p></div>
+        <div class="mini-state"><div class="mini-app"></div><div class="mini-note opaque">企画書</div><span>→</span><div class="mini-app"></div><div class="mini-note clear">企画書</div></div>
+      </article>
+      <article id="behind">
+        <span class="guide-number">02</span>
+        <div><p class="eyebrow">Work behind</p><h2>背面のアプリを操作する。</h2><p>背面操作モードでは、クリックが付箋の向こう側へ届きます。資料、ブラウザ、フォルダをその場で操作できます。</p></div>
+        <div class="mini-clickthrough"><div class="mini-note clear">確認して送る</div><button type="button">資料を開く</button><i></i></div>
+      </article>
+      <article id="edit">
+        <span class="guide-number">03</span>
+        <div><p class="eyebrow">Return to edit</p><h2>必要なときは、編集へ戻る。</h2><p>透明表示を解除すると、付箋の移動や文字の編集へ戻れます。現在のモードは画面上のラベルでいつでも確認できます。</p></div>
+        <div class="mode-switch" aria-label="モードの切り替えイメージ"><span>背面を操作</span><i></i><strong>付箋を編集</strong></div>
+      </article>
+    </section>
+
+    <section class="guide-note">
+      <div><p class="eyebrow">Two clear states</p><h2>今どちらを操作できるか、迷わせない。</h2></div>
+      <p>「付箋を編集」と「背面を操作」の状態を、色とラベルの両方で表示します。透明度だけに頼らず、現在の状態をいつでも判断できます。</p>
+    </section>
+
+    <section class="final-cta guide-cta">
+      <p class="eyebrow">Back to overview</p>
+      <h2>機能全体を、紹介ページで見る。</h2>
+      <div class="actions centered-actions"><a class="button button-primary" href="wireframe-sticky-lp.html">紹介ページへ戻る</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="wireframe-sticky-lp.html"><span class="brand-mark" aria-hidden="true"></span><span>Transparent Sticky Notes</span></a>
+    <span>操作ガイド</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+sources/
+AGENTS.md
+.git/
+.tools/
+*.log
+
